@@ -4,7 +4,7 @@ window.CATALOGO = {
     "nombre": "Merina",
     "whatsapp": "50255551234",
     "moneda": "Q",
-    "instagram": "",
+    "instagram": "merina.co",
     "facebook": "",
     "ciudad": "Guatemala",
     "horario": "Lunes a sábado, de 9:00 a 18:00",
