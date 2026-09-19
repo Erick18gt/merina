@@ -6,7 +6,14 @@
   <title>Merina · Perfumería</title>
   <meta name="description" content="Merina, perfumería. Fragancias para mujer, hombre y unisex. Mira el catálogo y haz tu pedido por WhatsApp.">
   <meta name="theme-color" content="#0b0b0a">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0a'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='38' font-family='Georgia,serif' fill='%23cfa84e'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Merina · Perfumería">
+  <meta property="og:description" content="Fragancias para mujer, hombre y unisex. Mira el catálogo y pide por WhatsApp.">
+  <meta property="og:image" content="https://erick18gt.github.io/merina/img/compartir.jpg">
+  <meta property="og:url" content="https://erick18gt.github.io/merina/">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +24,10 @@
 
   <header class="top">
     <div class="wrap">
-      <a class="logo" href="#inicio" aria-label="Merina, ir al inicio">Merina</a>
+      <a class="logo" href="#inicio" aria-label="Merina, ir al inicio">
+        <img src="img/simbolo.png" alt="" width="24" height="44">
+        <span>Merina</span>
+      </a>
       <nav aria-label="Principal">
         <a href="#catalogo">Catálogo</a>
         <a href="#como-pedir">Cómo pedir</a>
@@ -41,28 +51,8 @@
           </div>
         </div>
 
-        <div class="hero-art" aria-hidden="false">
-          <svg class="botella-hero" viewBox="0 0 300 420" role="img" aria-label="Frasco de perfume Merina llenándose de perfume color ámbar">
-            <defs>
-              <clipPath id="cuerpo"><rect x="60" y="140" width="180" height="250" rx="30"/></clipPath>
-              <linearGradient id="ambarG" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#ecd28c"/>
-                <stop offset="1" stop-color="#a37a25"/>
-              </linearGradient>
-            </defs>
-            <g clip-path="url(#cuerpo)">
-              <rect x="60" y="140" width="180" height="250" fill="rgba(241,235,221,.07)"/>
-              <rect class="liquido" x="60" y="215" width="180" height="180" fill="url(#ambarG)"/>
-            </g>
-            <rect x="60" y="140" width="180" height="250" rx="30" fill="none" stroke="rgba(232,204,133,.85)" stroke-width="2"/>
-            <rect x="128" y="108" width="44" height="32" fill="#1b1915" stroke="rgba(232,204,133,.6)"/>
-            <rect x="108" y="40" width="84" height="72" rx="8" fill="#cfa84e"/>
-            <rect x="118" y="50" width="6" height="52" rx="3" fill="rgba(255,255,255,.45)"/>
-            <rect x="80" y="165" width="8" height="200" rx="4" fill="rgba(255,255,255,.28)"/>
-            <rect x="100" y="256" width="100" height="64" rx="3" fill="#f1ebdd"/>
-            <text x="150" y="294" text-anchor="middle" font-family="Italiana, Georgia, serif" font-size="21" letter-spacing="1.5" fill="#0b0b0a">MERINA</text>
-            <line x1="122" y1="304" x2="178" y2="304" stroke="#9c7a2c" stroke-width="1"/>
-          </svg>
+        <div class="hero-art">
+          <img class="logo-hero" src="img/logo.png" alt="Logo de Merina" width="382" height="820">
         </div>
       </div>
     </section>
