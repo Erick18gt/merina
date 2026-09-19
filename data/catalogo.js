@@ -12,6 +12,30 @@ window.CATALOGO = {
   },
   "productos": [
     {
+      "id": 17,
+      "imagen": "img/mont-blanc-explorer-platinum-mu8mkpfq.jpg",
+      "nombre": "MONT BLANC EXPLORER PLATINUM",
+      "marca": "Merina",
+      "categoria": "Hombre",
+      "ml": 100,
+      "precio": 885,
+      "notas": "Ozonico-Amaderado-Especiado-Aromático",
+      "disponible": true,
+      "oculto": false
+    },
+    {
+      "id": 16,
+      "imagen": "img/gucci-flora-gorgeous-magnolia-mu8miftj.jpg",
+      "nombre": "GUCCI FLORA GORGEOUS MAGNOLIA",
+      "marca": "Merina",
+      "categoria": "Mujer",
+      "ml": 100,
+      "precio": 1170,
+      "notas": "Floral-Coco-Frutal",
+      "disponible": true,
+      "oculto": false
+    },
+    {
       "id": 15,
       "imagen": "img/azzaro-the-most-wanted-intense-men-edt-mu8kj658.jpg",
       "nombre": "AZZARO THE MOST WANTED INTENSE MEN EDT",
