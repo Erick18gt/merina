@@ -33,7 +33,7 @@ window.CATALOGO = {
       "notas": "Sal marina, bergamota y madera clara",
       "imagen": "",
       "disponible": true,
-      "oculto": false
+      "oculto": true
     },
     {
       "id": 3,
@@ -45,7 +45,7 @@ window.CATALOGO = {
       "notas": "Cedro, cuero y pimienta negra",
       "imagen": "",
       "disponible": true,
-      "oculto": false
+      "oculto": true
     },
     {
       "id": 4,
@@ -57,7 +57,7 @@ window.CATALOGO = {
       "notas": "Rosa, incienso y almizcle",
       "imagen": "",
       "disponible": true,
-      "oculto": false
+      "oculto": true
     },
     {
       "id": 5,
@@ -69,7 +69,7 @@ window.CATALOGO = {
       "notas": "Vetiver, tabaco y haba tonka",
       "imagen": "",
       "disponible": true,
-      "oculto": false
+      "oculto": true
     },
     {
       "id": 6,
@@ -81,7 +81,7 @@ window.CATALOGO = {
       "notas": "Higo, hoja de tomate y coco",
       "imagen": "",
       "disponible": true,
-      "oculto": false
+      "oculto": true
     },
     {
       "id": 7,
@@ -93,7 +93,7 @@ window.CATALOGO = {
       "notas": "Azahar, pera y cedro blanco",
       "imagen": "",
       "disponible": false,
-      "oculto": false
+      "oculto": true
     },
     {
       "id": 8,
@@ -105,7 +105,7 @@ window.CATALOGO = {
       "notas": "Ámbar, oud suave y canela",
       "imagen": "",
       "disponible": true,
-      "oculto": false
+      "oculto": true
     },
     {
       "id": 9,
@@ -116,8 +116,8 @@ window.CATALOGO = {
       "precio": 260,
       "notas": "Lavanda, menta y musgo",
       "imagen": "",
-      "disponible": true,
-      "oculto": false
+      "disponible": false,
+      "oculto": true
     }
   ]
 };
