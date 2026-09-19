@@ -17,11 +17,11 @@ window.CATALOGO = {
       "marca": "Merina",
       "categoria": "Mujer",
       "ml": 100,
-      "precio": 350,
+      "precio": 399,
       "notas": "Jazmín, vainilla y ámbar",
       "imagen": "",
       "disponible": true,
-      "oculto": false
+      "oculto": true
     },
     {
       "id": 2,
