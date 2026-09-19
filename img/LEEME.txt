@@ -1,0 +1,3 @@
+Esta carpeta guarda las fotos de los perfumes.
+Las sube automaticamente el panel de administracion (admin.html).
+No hace falta que subas nada aqui a mano.
