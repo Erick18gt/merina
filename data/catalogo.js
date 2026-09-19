@@ -64,7 +64,7 @@ window.CATALOGO = {
       "imagen": "img/carolina-herrera-212-vip-black-men-edp-s-mu8kp3no.jpg",
       "nombre": "CAROLINA HERRERA 212 VIP BLACK MEN. EDP S",
       "marca": "Merina",
-      "categoria": "Mujer",
+      "categoria": "Hombre",
       "ml": 100,
       "precio": 949,
       "notas": "Aromático-Avainillado-Especiado-Dulce-Lavanda",
