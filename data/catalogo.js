@@ -188,8 +188,8 @@ window.CATALOGO = {
       "precio": 885,
       "notas": "Caramelo-Dulce-Avainillado-Aromático-Cítrico",
       "imagen": "img/jean-paul-gaultier-scandal-pour-homme-edt-mu8kvrcc.jpg",
-      "disponible": true,
-      "oculto": false
+      "disponible": false,
+      "oculto": true
     },
     {
       "id": 8,
