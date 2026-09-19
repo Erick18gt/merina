@@ -28,9 +28,8 @@
   /* ---------- Frasco dibujado (cuando no hay foto) ---------- */
   function botellaSVG(p, i) {
     var forma = i % 3;
-    var hue = { Mujer: 10, Hombre: 165, Unisex: 38 }[p.categoria];
-    if (hue === undefined) hue = 38;
-    var liquido = "hsl(" + hue + " 42% 42%)";
+    var colores = { Mujer: "#c98f7a", Hombre: "#7a5a22", Unisex: "#d4ad55" };
+    var liquido = colores[p.categoria] || "#d4ad55";
     var cid = "clip" + i;
     var cuerpo, cuello, tapa, nivel;
 
@@ -45,7 +44,7 @@
       tapa = '<rect x="46" y="22" width="28" height="24" rx="3"/>';
       nivel = 92;
     } else {
-      cuerpo = '<rect x="40" y="44" width="40" height="98" rx="5"/>';
+      cuerpo = '<rect x="38" y="44" width="44" height="98" rx="6"/>';
       cuello = '<rect x="54" y="34" width="12" height="10"/>';
       tapa = '<circle cx="60" cy="24" r="11"/>';
       nivel = 76;
@@ -54,13 +53,14 @@
     return '<svg viewBox="0 0 120 160" role="img" aria-label="Frasco ' + esc(p.nombre) + '">' +
       '<defs><clipPath id="' + cid + '">' + cuerpo + '</clipPath></defs>' +
       '<g clip-path="url(#' + cid + ')">' +
-        '<rect width="120" height="160" fill="rgba(255,255,255,.55)"/>' +
+        '<rect width="120" height="160" fill="rgba(241,235,221,.08)"/>' +
         '<rect y="' + nivel + '" width="120" height="90" fill="' + liquido + '"/>' +
       '</g>' +
-      '<g fill="none" stroke="rgba(20,48,42,.6)" stroke-width="1.5">' + cuerpo + '</g>' +
-      '<g fill="#14302a">' + cuello + tapa + '</g>' +
-      '<text x="60" y="112" text-anchor="middle" font-size="8" letter-spacing="1" ' +
-        'font-family="Italiana, Georgia, serif" fill="#14302a">MERINA</text>' +
+      '<g fill="none" stroke="#cfa84e" stroke-width="1.5">' + cuerpo + '</g>' +
+      '<g fill="#cfa84e">' + cuello + tapa + '</g>' +
+      '<rect x="40" y="100" width="40" height="16" rx="2" fill="#f1ebdd"/>' +
+      '<text x="60" y="111.5" text-anchor="middle" font-size="7" letter-spacing=".8" ' +
+        'font-family="Italiana, Georgia, serif" fill="#0b0b0a">MERINA</text>' +
     '</svg>';
   }
 
