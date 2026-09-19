@@ -12,6 +12,18 @@ window.CATALOGO = {
   },
   "productos": [
     {
+      "id": 4,
+      "nombre": "Rosa Ceniza",
+      "marca": "Merina",
+      "categoria": "Mujer",
+      "ml": 50,
+      "precio": 290,
+      "notas": "Rosa, incienso y almizcle",
+      "imagen": "",
+      "disponible": true,
+      "oculto": false
+    },
+    {
       "id": 1,
       "nombre": "Noche de Jazmín",
       "marca": "Merina",
@@ -21,7 +33,7 @@ window.CATALOGO = {
       "notas": "Jazmín, vainilla y ámbar",
       "imagen": "",
       "disponible": true,
-      "oculto": true
+      "oculto": false
     },
     {
       "id": 2,
@@ -33,7 +45,7 @@ window.CATALOGO = {
       "notas": "Sal marina, bergamota y madera clara",
       "imagen": "",
       "disponible": true,
-      "oculto": true
+      "oculto": false
     },
     {
       "id": 3,
@@ -45,19 +57,7 @@ window.CATALOGO = {
       "notas": "Cedro, cuero y pimienta negra",
       "imagen": "",
       "disponible": true,
-      "oculto": true
-    },
-    {
-      "id": 4,
-      "nombre": "Rosa Ceniza",
-      "marca": "Merina",
-      "categoria": "Mujer",
-      "ml": 50,
-      "precio": 290,
-      "notas": "Rosa, incienso y almizcle",
-      "imagen": "",
-      "disponible": true,
-      "oculto": true
+      "oculto": false
     },
     {
       "id": 5,
