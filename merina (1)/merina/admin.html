@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#14302a">
+  <title>Administración · Merina</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314302a'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='38' font-family='Georgia,serif' fill='%23e3b464'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- ============ ENTRAR ============ -->
+  <section id="login" class="login">
+    <form id="form-login" class="tarjeta" autocomplete="off">
+      <h1>Merina</h1>
+      <p class="sub">Administración del catálogo</p>
+
+      <label>Cuenta de GitHub
+        <input id="l-owner" required placeholder="mi-usuario" autocapitalize="none" spellcheck="false">
+      </label>
+      <label>Repositorio
+        <input id="l-repo" required value="merina" autocapitalize="none" spellcheck="false">
+      </label>
+      <label>Token de acceso
+        <input id="l-token" type="password" required autocomplete="off" placeholder="github_pat_...">
+      </label>
+      <label class="check">
+        <input type="checkbox" id="l-recordar" checked>
+        Recordar en este dispositivo
+      </label>
+
+      <p class="error" id="l-error" role="alert" hidden></p>
+      <button class="btn btn-prim" id="l-btn" type="submit">Entrar</button>
+
+      <details>
+        <summary>¿Cómo consigo el token?</summary>
+        <ol>
+          <li>Entra a github.com con la cuenta dueña del repositorio.</li>
+          <li>Toca tu foto → <b>Settings</b> → <b>Developer settings</b> → <b>Personal access tokens</b> → <b>Fine-grained tokens</b> → <b>Generate new token</b>.</li>
+          <li>Nombre: <i>Merina admin</i>. Vencimiento: el más largo que permita.</li>
+          <li>En <b>Repository access</b> elige <b>Only select repositories</b> y marca <b>merina</b>.</li>
+          <li>En <b>Permissions → Repository permissions</b> pon <b>Contents: Read and write</b>.</li>
+          <li>Toca <b>Generate token</b> y copia el texto que empieza con <code>github_pat_</code>. Solo se muestra una vez.</li>
+        </ol>
+        <p>El token funciona como una llave: no lo compartas ni lo publiques.</p>
+      </details>
+    </form>
+  </section>
+
+  <!-- ============ PANEL ============ -->
+  <div id="panel" hidden>
+    <header class="top">
+      <div class="wrap fila-top">
+        <span class="logo">Merina <small>Administración</small></span>
+        <div class="top-acc">
+          <a href="index.html" target="_blank" rel="noopener">Ver la página</a>
+          <button id="btn-salir" type="button">Cerrar sesión</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <nav class="tabs" role="tablist" aria-label="Secciones">
+        <button class="tab" role="tab" data-tab="perfumes" aria-selected="true">Perfumes</button>
+        <button class="tab" role="tab" data-tab="negocio" aria-selected="false">Datos del negocio</button>
+      </nav>
+
+      <section id="tab-perfumes">
+        <div class="cab">
+          <p id="total" class="total"></p>
+          <button id="btn-nuevo" class="btn btn-prim" type="button">Nuevo perfume</button>
+        </div>
+        <div id="lista"></div>
+      </section>
+
+      <section id="tab-negocio" hidden>
+        <form id="form-negocio" class="negocio" autocomplete="off" onsubmit="return false">
+          <label>Nombre del negocio <input data-cfg="nombre"></label>
+          <label>WhatsApp (con código de país, solo números)
+            <input data-cfg="whatsapp" inputmode="numeric" placeholder="50255551234">
+          </label>
+          <label>Símbolo de moneda <input data-cfg="moneda" placeholder="Q"></label>
+          <label>Instagram (usuario, sin @) <input data-cfg="instagram"></label>
+          <label>Facebook (usuario o nombre de la página) <input data-cfg="facebook"></label>
+          <label>Correo <input data-cfg="email" type="email"></label>
+          <label>Ciudad <input data-cfg="ciudad"></label>
+          <label>Horario <input data-cfg="horario"></label>
+          <p class="nota">Los cambios se publican con el botón “Publicar cambios”, igual que los perfumes.</p>
+        </form>
+      </section>
+    </main>
+
+    <div class="barra" id="barra" hidden>
+      <span>Tienes cambios sin publicar.</span>
+      <div>
+        <button id="btn-descartar" class="btn btn-sec" type="button">Descartar</button>
+        <button id="btn-publicar" class="btn btn-prim" type="button">Publicar cambios</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FORMULARIO DE PERFUME ============ -->
+  <dialog id="dlg">
+    <form id="form-perfume" autocomplete="off">
+      <h2 id="dlg-titulo">Nuevo perfume</h2>
+
+      <div class="foto-caja">
+        <div class="foto-prev" id="foto-prev"><span>Sin foto</span></div>
+        <div>
+          <label class="btn btn-sec sub-foto">Elegir foto
+            <input type="file" id="f-foto" accept="image/*" hidden>
+          </label>
+          <button type="button" id="btn-quitar-foto" class="enlace" hidden>Quitar foto</button>
+          <p class="nota">Se ajusta sola a un tamaño ligero. Se ve mejor con fondo blanco.</p>
+        </div>
+      </div>
+
+      <label>Nombre <input id="f-nombre" required maxlength="60"></label>
+      <div class="dos">
+        <label>Marca <input id="f-marca" maxlength="40"></label>
+        <label>Categoría
+          <select id="f-categoria">
+            <option>Mujer</option>
+            <option>Hombre</option>
+            <option>Unisex</option>
+          </select>
+        </label>
+      </div>
+      <div class="dos">
+        <label>Tamaño (ml) <input id="f-ml" type="number" min="0" step="1" inputmode="numeric"></label>
+        <label>Precio <input id="f-precio" type="number" min="0" step="0.01" inputmode="decimal"></label>
+      </div>
+      <label>Notas (a qué huele) <input id="f-notas" maxlength="120" placeholder="Jazmín, vainilla y ámbar"></label>
+
+      <label class="check"><input type="checkbox" id="f-disponible"> Disponible (desmarca si está agotado)</label>
+      <label class="check"><input type="checkbox" id="f-visible"> Mostrar en la página</label>
+
+      <p class="error" id="f-error" role="alert" hidden></p>
+      <div class="dlg-acc">
+        <button type="button" id="btn-cancelar" class="btn btn-sec">Cancelar</button>
+        <button type="submit" class="btn btn-prim">Guardar perfume</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="aviso" class="aviso" role="status" hidden></div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
