@@ -2,12 +2,12 @@
 window.CATALOGO = {
   "config": {
     "nombre": "Merina",
-    "whatsapp": "50255551234",
+    "whatsapp": "502 36419821",
     "moneda": "Q",
     "instagram": "merina.co",
     "facebook": "",
     "ciudad": "Guatemala",
-    "horario": "Lunes a sábado, de 9:00 a 18:00",
+    "horario": "Lunes a domingo, de 9:00 a 18:00",
     "email": ""
   },
   "productos": [
