@@ -12,6 +12,54 @@ window.CATALOGO = {
   },
   "productos": [
     {
+      "id": 14,
+      "imagen": "img/carolina-herrera-good-girl-woman-edp-mu8klg0c.jpg",
+      "nombre": "CAROLINA HERRERA GOOD GIRL WOMAN EDP",
+      "marca": "Merina",
+      "categoria": "Mujer",
+      "ml": 80,
+      "precio": 1150,
+      "notas": "Dulce-Especiado-Avainillado-Floral",
+      "disponible": true,
+      "oculto": false
+    },
+    {
+      "id": 13,
+      "imagen": "img/carolina-herrera-good-girl-very-elixir-good-woman-edp-mu8knoua.jpg",
+      "nombre": "CAROLINA HERRERA GOOD GIRL VERY ELIXIR GOOD WOMAN EDP",
+      "marca": "Merina",
+      "categoria": "Mujer",
+      "ml": 80,
+      "precio": 1189,
+      "notas": "Acerezado-Avainillado-Almendrado",
+      "disponible": true,
+      "oculto": false
+    },
+    {
+      "id": 2,
+      "nombre": "PACO RABANNE ONE MILLION ROYAL PARFUM MEN EDP",
+      "marca": "Merina",
+      "categoria": "Hombre",
+      "ml": 100,
+      "precio": 980,
+      "notas": "Especiado-Amaderado-Aromático-Ámbar",
+      "imagen": "img/paco-rabanne-one-million-royal-parfum-men-edp-mu8krff7.jpg",
+      "disponible": true,
+      "oculto": false
+    },
+    {
+      "id": 8,
+      "nombre": "JEAN PAUL GAULTIER LE MALE ELIXIR MEN  EDP",
+      "marca": "Merina",
+      "categoria": "Hombre",
+      "ml": 125,
+      "precio": 999,
+      "notas": "Avainillado-Dulce-Miel-Ámbar-Aromático",
+      "imagen": "img/jean-paul-gaultier-le-male-elixir-men-edp-mu8kwaoq.jpg",
+      "disponible": true,
+      "oculto": false
+    },
+    {
       "id": 17,
       "imagen": "img/mont-blanc-explorer-platinum-mu8mkpfq.jpg",
       "nombre": "MONT BLANC EXPLORER PLATINUM",
@@ -44,30 +92,6 @@ window.CATALOGO = {
       "ml": 100,
       "precio": 879,
       "notas": "Citrico-Lavanda-Fresco-Especiado",
-      "disponible": true,
-      "oculto": false
-    },
-    {
-      "id": 14,
-      "imagen": "img/carolina-herrera-good-girl-woman-edp-mu8klg0c.jpg",
-      "nombre": "CAROLINA HERRERA GOOD GIRL WOMAN EDP",
-      "marca": "Merina",
-      "categoria": "Mujer",
-      "ml": 80,
-      "precio": 1150,
-      "notas": "Dulce-Especiado-Avainillado-Floral",
-      "disponible": true,
-      "oculto": false
-    },
-    {
-      "id": 13,
-      "imagen": "img/carolina-herrera-good-girl-very-elixir-good-woman-edp-mu8knoua.jpg",
-      "nombre": "CAROLINA HERRERA GOOD GIRL VERY ELIXIR GOOD WOMAN EDP",
-      "marca": "Merina",
-      "categoria": "Mujer",
-      "ml": 80,
-      "precio": 1189,
-      "notas": "Acerezado-Avainillado-Almendrado",
       "disponible": true,
       "oculto": false
     },
@@ -132,18 +156,6 @@ window.CATALOGO = {
       "oculto": false
     },
     {
-      "id": 2,
-      "nombre": "PACO RABANNE ONE MILLION ROYAL PARFUM MEN EDP",
-      "marca": "Merina",
-      "categoria": "Hombre",
-      "ml": 100,
-      "precio": 980,
-      "notas": "Especiado-Amaderado-Aromático-Ámbar",
-      "imagen": "img/paco-rabanne-one-million-royal-parfum-men-edp-mu8krff7.jpg",
-      "disponible": true,
-      "oculto": false
-    },
-    {
       "id": 3,
       "nombre": "PACO RABANNE PHANTOM ELIXIR MEN PARFUM INTENSE",
       "marca": "Merina",
@@ -190,18 +202,6 @@ window.CATALOGO = {
       "imagen": "img/jean-paul-gaultier-scandal-pour-homme-edt-mu8kvrcc.jpg",
       "disponible": false,
       "oculto": true
-    },
-    {
-      "id": 8,
-      "nombre": "JEAN PAUL GAULTIER LE MALE ELIXIR MEN  EDP",
-      "marca": "Merina",
-      "categoria": "Hombre",
-      "ml": 125,
-      "precio": 999,
-      "notas": "Avainillado-Dulce-Miel-Ámbar-Aromático",
-      "imagen": "img/jean-paul-gaultier-le-male-elixir-men-edp-mu8kwaoq.jpg",
-      "disponible": true,
-      "oculto": false
     },
     {
       "id": 9,
